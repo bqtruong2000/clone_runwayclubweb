@@ -1,0 +1,5 @@
+<div *ngFor="let item of (this.article$ | async)?.article ?? []">
+  <p>{{ item.description }}</p>
+  <p>{{ item.id }}</p>
+  <p>{{ item.title }}</p>
+</div>
